@@ -60,12 +60,20 @@ export default function ScrabbleHelper() {
       flexDirection: 'column',
       alignItems: 'center'
     }}>
-      <h1 style={{
-        fontSize: '3rem',
-        color: '#e60012',
-        marginBottom: '30px'
-      }}>Scrabble Helper</h1>
+      
+      {/* Header Image */}
+      <img
+        src="/scrabble-header.png"
+        alt="Scrabble Helper"
+        style={{
+          width: 'auto',
+          maxWidth: '90%',
+          height: 'auto',
+          marginBottom: '30px'
+        }}
+      />
 
+      {/* Card with input fields and buttons */}
       <div style={{
         background: '#ffffff',
         padding: '30px',
@@ -155,8 +163,7 @@ export default function ScrabbleHelper() {
               borderRadius: '12px',
               border: 'none',
               cursor: 'pointer',
-              transition: 'background 0.3s',
-              boxSizing: 'border-box'
+              transition: 'background 0.3s'
             }}
             onMouseOver={e => e.currentTarget.style.backgroundColor = '#cc0010'}
             onMouseOut={e => e.currentTarget.style.backgroundColor = '#e60012'}
@@ -176,8 +183,7 @@ export default function ScrabbleHelper() {
               borderRadius: '12px',
               border: 'none',
               cursor: 'pointer',
-              transition: 'background 0.3s',
-              boxSizing: 'border-box'
+              transition: 'background 0.3s'
             }}
             onMouseOver={e => e.currentTarget.style.backgroundColor = '#777777'}
             onMouseOut={e => e.currentTarget.style.backgroundColor = '#999999'}
@@ -200,8 +206,7 @@ export default function ScrabbleHelper() {
                 borderRadius: '10px',
                 textAlign: 'center',
                 fontSize: '16px',
-                fontWeight: '500',
-                boxSizing: 'border-box'
+                fontWeight: '500'
               }}>
                 {word}
               </div>
@@ -213,6 +218,7 @@ export default function ScrabbleHelper() {
           )}
         </div>
       </div>
+
     </div>
   );
 }
