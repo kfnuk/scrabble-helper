@@ -1,6 +1,6 @@
 {
   "name": "Scrabble Helper",
-  "short_name": "Scrabble",
+  "short_name": "ScrabHelp",
   "description": "Find the best Scrabble words instantly!",
   "start_url": "/",
   "display": "standalone",
